@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SCRUBS</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+        crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        
+
+    <script src="js/customers.js"></script>
+    <style>
+        #search{
+            background-color: #00995D;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+    }
+    #fonte{
+        color: white;
+    }
+    #fonte2{
+        color: #00995D;
+    }
+    .jumbotron-fluid{
+        background-color: #00995D;
+    }
+    tr{
+        background-color: #00995D;
+        color: white;
+        justify-content:center;
+            align-items: center;
+    }
+    td{
+        background-color: #ffffff;
+        color: #00995D;
+        justify-content:center;
+            align-items: center;
+            /* border: #00995D solid 1 px; */
+    }
+
+    footer{
+      background: #00995D;
+      padding: 20px 0px 20px 0px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      /* Height of the footer*/ 
+      /*height: 40px;*/
+
+    }
+
+footer h4{
+	color: black;
+	font-size: 0.9 em;
+	text-transform: uppercase;
+}
+
+footer .navbar-nav a{
+	color: white;
+	font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover{
+	color:  #9bf0e1;
+	text-decoration: none;
+}
+
+footer ul{
+	list-style: none;
+}
+
+footer ul li{
+	float: right;
+	margin: 0 5px;
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        
+            <h1 style="color: white" class="text-center">DOC</h1>  
+
+            <form class="form-style-8"> 
+                <div class="container" id="search">
+            
+                         
+                        <h2 class="text-center" id="fonte">Procurar Paciente</h2><br>
+            
+                        <span class="col-sm-4 text-center" id="fonte">
+                            
+                            <input type="text" class="form-control" placeholder="Primeiro Nome">
+                            <br>
+                            <input type="text" class="form-control" placeholder="Ultimo Nome">
+            
+                          </span><br>
+        
+                    <div class="row">
+    
+                    <div class="col-sm-12 text-center">
+                    <button type="button" class="btn btn-success" id="btn-search">Procurar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+                </form>
+
+                <div class="container">
+                    <div class="col-xs-12">
+                        <button type="button" class="btn btn-success" id="btn-update1" onclick="window.location.href='form.html'">Novo Paciente</button>
+                        <br>
+                    <h3 class="text-info text-center" id="fonte2">Lista de Clientes:</h3>
+
+            <table id="customer-table" class="table">
+                <thead class="table">
+                    <th>Editar</th>
+                    <th>Primeiro Nome</th>
+                    <th>Ultimo Nome</th>
+                    <th>Email</th>
+                    <th>Visualizar</th>
+                    <th>Deletar</th>
+            </thead>
+                <tbody id="customer-body"></tbody>
+            </table>
+            </div>
+        </div>       
+
+    </div>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <h4>Empresa</h4>           
+              <ul class="navbar-nav">
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Empregos</a></li>
+                <li><a href="">Imprensa</a></li>
+                <li><a href="">Novidades</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+             <h4>Area Cliente</h4>           
+              <ul class="navbar-nav">
+                <li><a href="">FUQs</a></li>
+                <li><a href="">Agendamentos</a></li>
+                <li><a href="">Contactos</a></li>
+              </ul>          
+            </div>
+            <div class="col-md-2">
+             <h4>Links uteis</h4>           
+              <ul class="navbar-nav">
+                <li><a href="">Ajuda</a></li>
+                <li><a href="">Florista</a></li>
+                <li><a href="">Funerárias</a></li>
+              </ul>          
+            </div>
+            <div class="col-md-4">
+             <ul>
+               <li>
+                 <a href="">
+                   <img src="facebook.png">
+                 </a>
+               </li>
+               <li>
+                 <a href="">
+                   <img src="twitter.png">
+                 </a>
+               </li>
+               <li>
+                 <a href="">
+                   <img src="instagram.png">
+                 </a>
+               </li>
+             </ul>          
+            </div>
+            
+          </div>
+          
+        </div>
+  
+      </footer>
+</body>
+
+</html>
